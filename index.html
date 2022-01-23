@@ -19,12 +19,12 @@
 <body>
 
     <!-- kirish -->
-    <audio id="in_audio" src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d25a744b97.mp3?filename=vibraphone-transition-music-cue-14487.mp3"></audio>
+    <audio src="audio/vibraphone-transition-music-cue-14487.mp3" id="in_audio"></audio>
 
     <div class="header">
         <div class="left_menu">
             <div class="kompaniya_logo">
-                <a href="">Mirvaliyev</a>
+                <a href="#home">Mirvaliyev</a>
             </div>
             <div class="header_menu">
                 <ul type="none">
@@ -54,8 +54,8 @@
         let in_audio=document.getElementById('in_audio');
         setTimeout(() => {
             in_audio.play();
-        }, 1000); 
-
+        }, 3000);
+    
         let icon_audio=document.getElementById('icon_audio');
         let audio=document.getElementById('audio');
         icon_audio.onclick=function(){
