@@ -19,7 +19,7 @@
 <body>
 
     <!-- kirish -->
-    <audio src="audio/vibraphone-transition-music-cue-14487.mp3" id="in_audio"></audio>
+    <audio src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d25a744b97.mp3?filename=vibraphone-transition-music-cue-14487.mp3" id="in_audio"></audio>
 
     <div class="header">
         <div class="left_menu">
@@ -37,7 +37,7 @@
             <div class="control_audio">
                 click button
                 <ion-icon name="play-circle-outline" id="icon_audio"></ion-icon>
-                <audio src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_ea75bab6d8.mp3?filename=morning-garden-acoustic-chill-15013.mp3" id="audio"></audio>
+                <audio src="https://cdn.pixabay.com/download/audio/2021/10/25/audio_b3ada93101.mp3?filename=melodic-techno-03-extended-version-moogify-9867.mp3" id="site_audio"></audio>
             </div>
         </div>
         <div class="site_name"></div>
@@ -54,17 +54,17 @@
         let in_audio=document.getElementById('in_audio');
         setTimeout(() => {
             in_audio.play();
-        }, 3000);
+        }, 1000);
     
         let icon_audio=document.getElementById('icon_audio');
-        let audio=document.getElementById('audio');
+        let site_audio=document.getElementById('site_audio');
         icon_audio.onclick=function(){
-            if(audio.paused){
-                audio.play();
+            if(site_audio.paused){
+                site_audio.play();
                 icon_audio.name="pause-circle-outline";
             }
             else{
-                audio.pause();
+                site_audio.pause();
                 icon_audio.name="play-circle-outline";
             }
         }
