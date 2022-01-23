@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Mirvaliyev.uz</title>
+    <link rel="stylesheet" href="index_css/style.css">
+</head>
+
+<body>
+
+    <!-- kirish -->
+    <audio id="in_audio" src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d25a744b97.mp3?filename=vibraphone-transition-music-cue-14487.mp3"></audio>
+
+    <div class="header">
+        <div class="left_menu">
+            <div class="kompaniya_logo">
+                <a href="">Mirvaliyev</a>
+            </div>
+            <div class="header_menu">
+                <ul type="none">
+                    <li><a href="#home"><span></span> home</a></li>
+                    <li><a href="#my_projects"><span></span> my projects</a></li>
+                    <li><a href="#about_me"><span></span> about me</a></li>
+                    <li><a href="#contact_me"><span></span> contact me</a></li>
+                </ul>
+            </div>
+            <div class="control_audio">
+                click button
+                <ion-icon name="play-circle-outline" id="icon_audio"></ion-icon>
+                <audio src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_ea75bab6d8.mp3?filename=morning-garden-acoustic-chill-15013.mp3" id="audio"></audio>
+            </div>
+        </div>
+        <div class="site_name"></div>
+        <div class="site_komment"></div>
+        <div class="big_menu"></div>
+    </div>
+
+    <section id="home"></section>
+    <section id="my_projects"></section>
+    <section id="about_me"></section>
+    <section id="contact_me"></section>
+
+    <script>
+        let in_audio=document.getElementById('in_audio');
+        setTimeout(() => {
+            in_audio.play();
+        }, 1000); 
+
+        let icon_audio=document.getElementById('icon_audio');
+        let audio=document.getElementById('audio');
+        icon_audio.onclick=function(){
+            if(audio.paused){
+                audio.play();
+                icon_audio.name="pause-circle-outline";
+            }
+            else{
+                audio.pause();
+                icon_audio.name="play-circle-outline";
+            }
+        }
+    </script>
+</body>
+
+</html>
