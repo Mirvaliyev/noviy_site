@@ -18,7 +18,7 @@ body{
 .header{
     position: fixed;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     top: 0%;
     left: 0%;
     z-index: 200;
@@ -81,6 +81,7 @@ body{
             color: white;
             align-items: center;
             font-size: 15px;
+            position: relative;
             div{
                 height: 100%;
                 width: 40px;
