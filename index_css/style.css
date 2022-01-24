@@ -20,7 +20,7 @@ body {
 body .main_section {
   width: 100%;
   border: 1px solid red;
-  height: 90vh;
+  max-height: 90vh;
   position: relative;
 }
 
