@@ -19,7 +19,7 @@ body{
     .main_section{
         width: 100%;
         border: 1px solid red;
-        height: 100vh;
+        height: calc(100vh-100px);
         position: relative;
     }
 }
