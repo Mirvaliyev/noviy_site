@@ -22,6 +22,19 @@ body {
   transition: 1s all;
 }
 
+.proba {
+  max-height: 95vh;
+  width: 100%;
+  border: 2px solid red;
+  overflow-y: scroll;
+}
+
+.proba div {
+  width: 100%;
+  min-height: 95vh;
+  border: 1px solid black;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -187,6 +200,7 @@ section {
 #home {
   background-image: url(https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-attachment: fixed;
+  border-top: none;
 }
 
 #my_projects {

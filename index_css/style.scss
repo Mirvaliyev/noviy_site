@@ -6,6 +6,7 @@
     font-weight: 200;
 }
 $color:white;
+
 html{
     scroll-behavior: smooth;
 }
@@ -16,6 +17,17 @@ body{
     width: 100%;
     opacity: 0;
     transition: 1s all;
+}
+.proba{
+    max-height: 95vh;
+    width: 100%;
+    border: 2px solid red;
+    overflow-y: scroll;
+    div{
+        width: 100%;
+        min-height: 95vh;
+        border: 1px solid black;
+    }
 }
 .header{
     position: fixed;
@@ -134,6 +146,7 @@ section{
 #home{
     background-image: url(https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-attachment: fixed;
+    border-top: none;
 }
 #my_projects{
     background-image: url();
