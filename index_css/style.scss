@@ -25,7 +25,7 @@ body{
     display: flex;
     .left_menu{
         position: relative;
-        width: 16.8%;
+        width: 230px;
         height: 100vh;
         border-right: 0.5px solid rgba(255, 255, 255, 0.2);
         display: flex;
@@ -108,13 +108,13 @@ body{
     }
     .site_name{
         position: relative;
-        width: 74.5%;
+        width: 74.5vw;
         height: 100vh;
         border-right: 0.5px solid rgba(255, 255, 255, 0.2);
     }
     .big_menu{
         position: relative;
-        width: 8.7%;
+        width: 8.7vw;
         height: 100vh;
     }
 

@@ -1,11 +1,11 @@
-let sa=document.getElementById('sa');
-setTimeout(function(){
-    if(sa.paused){
-        sa.play();
-    }
-}, 4000);
-
-
+const sa=document.querySelector('#sa');
+window.addEventListener('load', function(){
+    setTimeout(function(){
+        if(sa.paused){
+            sa.play();
+        }
+    }, 4000);
+})
 let btn_audio=document.getElementById('btn_audio');
 let span_audio=document.querySelectorAll('.span_audio');
 let site_audio=document.getElementById('site_audio');
