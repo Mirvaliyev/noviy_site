@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
     setTimeout(function(){
         document.body.style.opacity='1';
         sa.play();
-    }, 4000);
+    }, 3000);
 
 })
 let btn_audio=document.getElementById('btn_audio');
