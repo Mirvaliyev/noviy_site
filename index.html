@@ -19,7 +19,9 @@
 <body>
 
     <!-- kirish -->
-    <audio src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d25a744b97.mp3?filename=vibraphone-transition-music-cue-14487.mp3" id="in_audio"></audio>
+    <audio  id="sa">
+        <source src="audio/vibraphone-transition-music-cue-14487.mp3" type="audio/mpeg">
+    </audio>
 
     <div class="header">
         <div class="left_menu">
@@ -35,8 +37,20 @@
                 </ul>
             </div>
             <div class="control_audio">
-                click button
-                <ion-icon name="play-circle-outline" id="icon_audio"></ion-icon>
+                <div id="btn_audio">
+                    <span class="span_audio" style="--i:0.5"></span>
+                    <span class="span_audio" style="--i:2"></span>
+                    <span class="span_audio" style="--i:1"></span>
+                    <span class="span_audio" style="--i:4"></span>
+                    <span class="span_audio" style="--i:3"></span>
+                    <span class="span_audio" style="--i:2.5"></span>
+                    <span class="span_audio" style="--i:3.5"></span>
+                    <span class="span_audio" style="--i:1.5"></span>
+                    <span class="span_audio" style="--i:2"></span>
+                    <span class="span_audio" style="--i:0.5"></span>
+                    <span class="span_audio" style="--i:1"></span>
+                </div>
+                Turn on the sound
                 <audio src="https://cdn.pixabay.com/download/audio/2021/10/25/audio_b3ada93101.mp3?filename=melodic-techno-03-extended-version-moogify-9867.mp3" id="site_audio"></audio>
             </div>
         </div>

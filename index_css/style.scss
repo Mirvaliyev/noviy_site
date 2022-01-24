@@ -36,7 +36,6 @@ body{
             height: auto;
             width: 100%;
             position: relative;
-            position: relative;
             a{
                 width: 100%;
                 height: 100%;
@@ -77,14 +76,33 @@ body{
            }
         }
         .control_audio{
-            // border: 1px solid red;
             display: flex;
             justify-content: space-evenly;
             color: white;
             align-items: center;
-            #icon_audio{
-                font-size: 25px;
+            font-size: 15px;
+            div{
+                height: 100%;
+                width: 40px;
+                position: relative;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
                 cursor: pointer;
+                @keyframes anim_audio{
+                    100%{
+                        transform: scaleY(var(--i));
+                    }
+                }
+                span{
+                    height: 9px;
+                    width: 1px;
+                    background: white;
+                    position: relative;
+                }
+                .span_toggle{
+                    animation: anim_audio calc(var(--i)*0.5s) linear alternate infinite;
+                }
             }
         }
     }

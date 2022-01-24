@@ -53,7 +53,6 @@ body {
   height: auto;
   width: 100%;
   position: relative;
-  position: relative;
 }
 
 .header .left_menu .kompaniya_logo a {
@@ -113,11 +112,49 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 15px;
 }
 
-.header .left_menu .control_audio #icon_audio {
-  font-size: 25px;
+.header .left_menu .control_audio div {
+  height: 100%;
+  width: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
+}
+
+@-webkit-keyframes anim_audio {
+  100% {
+    -webkit-transform: scaleY(var(--i));
+            transform: scaleY(var(--i));
+  }
+}
+
+@keyframes anim_audio {
+  100% {
+    -webkit-transform: scaleY(var(--i));
+            transform: scaleY(var(--i));
+  }
+}
+
+.header .left_menu .control_audio div span {
+  height: 9px;
+  width: 1px;
+  background: white;
+  position: relative;
+}
+
+.header .left_menu .control_audio div .span_toggle {
+  -webkit-animation: anim_audio calc(var(--i)*0.5s) linear alternate infinite;
+          animation: anim_audio calc(var(--i)*0.5s) linear alternate infinite;
 }
 
 .header .site_name {
