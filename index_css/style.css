@@ -8,6 +8,8 @@
 }
 
 html {
+  height: 100%;
+  display: block;
   scroll-behavior: smooth;
 }
 
@@ -20,6 +22,7 @@ head {
 }
 
 body {
+  height: 100%;
   width: 100%;
 }
 
