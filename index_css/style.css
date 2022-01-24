@@ -15,14 +15,15 @@ html {
   width: 0px;
 }
 
-head {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-}
-
 body {
   width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    height: 90vh;
+  }
 }
 
 .header {
@@ -184,6 +185,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  border: 1px solid red;
 }
 
 #home {
