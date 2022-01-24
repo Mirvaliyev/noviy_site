@@ -1,10 +1,8 @@
 const sa=document.querySelector('#sa');
 window.addEventListener('load', function(){
     setTimeout(function(){
-        if(sa.paused){
-            document.body.style.opacity='1';
-            sa.play();
-        }
+        document.body.style.opacity='1';
+        sa.play();
     }, 4000);
 
 })
