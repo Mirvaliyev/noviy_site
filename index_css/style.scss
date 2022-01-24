@@ -11,15 +11,17 @@ html{
     display: block;
     scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
-    width: 0px;
-}
-head{
-    display: none;
-}
+// ::-webkit-scrollbar{
+//     width: 0px;
+// }
 body{
-    height: 100%;
     width: 100%;
+    .main_section{
+        width: 100%;
+        border: 1px solid red;
+        height: 100vh;
+        position: relative;
+    }
 }
 .header{
     position: fixed;
@@ -133,7 +135,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    border: 1px solid red;
+    border-top: 1px solid gray;
 }
 #home{
     background-image: url(https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
