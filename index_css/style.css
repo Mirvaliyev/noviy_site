@@ -22,13 +22,13 @@ body {
   transition: 1s all;
 }
 
-.mather {
+.father {
   max-height: 100vh;
   width: 100%;
   overflow-y: scroll;
 }
 
-.mather .child {
+.father .child {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -187,5 +187,17 @@ body {
 #contact_me {
   background: white;
   background-attachment: fixed;
+}
+
+@media screen and (max-width: 560px) {
+  .father {
+    max-height: 95vh;
+  }
+  .father .child {
+    min-height: 95vh;
+  }
+  .left_menu {
+    height: 95vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,8 @@
     font-weight: 200;
 }
 $color: white;
-
+$height_des:100vh;
+$height_tel:95vh;
 html {
     scroll-behavior: smooth;
 }
@@ -18,14 +19,14 @@ body {
     opacity: 0;
     transition: 1s all;
 }
-.mather {
-    max-height: 100vh;
+.father {
+    max-height: $height_des;
     width: 100%;
     overflow-y: scroll;
     .child {
         position: relative;
         width: 100%;
-        min-height: 100vh;
+        min-height: $height_des;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -39,7 +40,7 @@ body {
     left: 0%;
     z-index: 200;
     width: 230px;
-    height: 100vh;
+    height: $height_des;
     border-right: 0.5px solid rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
@@ -138,4 +139,17 @@ body {
 #contact_me {
     background: white;
     background-attachment: fixed;
+}
+
+@media screen and (max-width:560px) {
+   .father{
+       max-height: $height_tel;
+       .child{
+           min-height: $height_tel;
+       }
+   }
+   .left_menu{
+       height: $height_tel;
+   }
+       
 }
