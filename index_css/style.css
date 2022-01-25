@@ -191,13 +191,13 @@ body {
 
 @media screen and (max-width: 560px) {
   .father {
-    max-height: 95vh;
+    max-height: 92vh;
   }
   .father .child {
-    min-height: 95vh;
+    min-height: 92vh;
   }
   .left_menu {
-    height: 95vh;
+    height: 92vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
