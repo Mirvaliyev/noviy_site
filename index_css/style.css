@@ -22,6 +22,21 @@ body {
   transition: 1s all;
 }
 
+#menu_icon {
+  position: fixed;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  display: none;
+  right: 8px;
+  top: 5px;
+  z-index: 205;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 .father {
   max-height: 100vh;
   width: 100%;
@@ -40,6 +55,10 @@ body {
 
 .left_menu {
   position: fixed;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
   top: 0%;
   left: 0%;
   z-index: 200;
@@ -56,12 +75,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px;
 }
 
 .left_menu .kompaniya_logo {
   height: auto;
-  width: 100%;
   position: relative;
 }
 
@@ -189,6 +210,24 @@ body {
   background-attachment: fixed;
 }
 
+@media screen and (max-width: 992px) {
+  .left_menu {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+  }
+  .left_menu_show {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  #menu_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 560px) {
   .father {
     max-height: 93vh;
@@ -198,6 +237,7 @@ body {
   }
   .left_menu {
     height: 93vh;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="bosh">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
         rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Mirvaliyev.uz</title>
     <link rel="stylesheet" href="index_css/style.css">
 </head>
@@ -21,42 +21,43 @@
 
     <div class="father">
         <!-- kirish -->
+        <ion-icon name="reorder-two-outline" id="menu_icon"></ion-icon>
 
         <audio id="sa">
             <source src="audio/vibraphone-transition-music-cue-14487.mp3" type="audio/mpeg">
         </audio>
-    
-            <div class="left_menu">
-                <div class="kompaniya_logo">
-                    <a href="#home">Mirvaliyev</a>
-                </div>
-                <div class="header_menu">
-                    <ul type="none">
-                        <li><a href="#home"><span></span> home</a></li>
-                        <li><a href="#my_projects"><span></span> my projects</a></li>
-                        <li><a href="#about_me"><span></span> about me</a></li>
-                        <li><a href="#contact_me"><span></span> contact me</a></li>
-                    </ul>
-                </div>
-                <div class="control_audio">
-                    <div id="btn_audio">
-                        <span class="span_audio" style="--i:0.5"></span>
-                        <span class="span_audio" style="--i:2"></span>
-                        <span class="span_audio" style="--i:1"></span>
-                        <span class="span_audio" style="--i:4"></span>
-                        <span class="span_audio" style="--i:3"></span>
-                        <span class="span_audio" style="--i:2.5"></span>
-                        <span class="span_audio" style="--i:3.5"></span>
-                        <span class="span_audio" style="--i:1.5"></span>
-                        <span class="span_audio" style="--i:2"></span>
-                        <span class="span_audio" style="--i:0.5"></span>
-                        <span class="span_audio" style="--i:1"></span>
-                    </div>
-                    Turn on the sound
-                    <audio src="audio/audio_session.mp3" id="site_audio"></audio>
-                </div>
+
+        <div class="left_menu">
+            <div class="kompaniya_logo">
+                <a href="#home">Mirvaliyev</a>
             </div>
-    
+            <div class="header_menu">
+                <ul type="none">
+                    <li><a href="#home"><span></span> home</a></li>
+                    <li><a href="#my_projects"><span></span> my projects</a></li>
+                    <li><a href="#about_me"><span></span> about me</a></li>
+                    <li><a href="#contact_me"><span></span> contact me</a></li>
+                </ul>
+            </div>
+            <div class="control_audio">
+                <div id="btn_audio">
+                    <span class="span_audio" style="--i:0.5"></span>
+                    <span class="span_audio" style="--i:2"></span>
+                    <span class="span_audio" style="--i:1"></span>
+                    <span class="span_audio" style="--i:4"></span>
+                    <span class="span_audio" style="--i:3"></span>
+                    <span class="span_audio" style="--i:2.5"></span>
+                    <span class="span_audio" style="--i:3.5"></span>
+                    <span class="span_audio" style="--i:1.5"></span>
+                    <span class="span_audio" style="--i:2"></span>
+                    <span class="span_audio" style="--i:0.5"></span>
+                    <span class="span_audio" style="--i:1"></span>
+                </div>
+                Turn on the sound
+                <audio src="audio/audio_session.mp3" id="site_audio"></audio>
+            </div>
+        </div>
+
         <div class="child" id="home"></div>
         <div class="child" id="my_projects"></div>
         <div class="child" id="about_me"></div>

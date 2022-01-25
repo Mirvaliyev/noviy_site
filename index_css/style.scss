@@ -19,6 +19,19 @@ body {
     opacity: 0;
     transition: 1s all;
 }
+#menu_icon{
+    position: fixed;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    display: none;
+    right: 8px;
+    top: 5px;
+    z-index: 205;
+    cursor: pointer;
+    transition: all 1s;
+}
 .father {
     max-height: $height_des;
     width: 100%;
@@ -33,9 +46,10 @@ body {
         border-top: 1px solid gray;
     }
 }
-
 .left_menu {
     position: fixed;
+    transform: translateX(0%);
+    transition: all 1s linear;
     top: 0%;
     left: 0%;
     z-index: 200;
@@ -45,10 +59,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 30px;
     .kompaniya_logo {
         height: auto;
-        width: 100%;
+        // width: 100%;
         position: relative;
         a {
             width: 100%;
@@ -140,7 +155,19 @@ body {
     background: white;
     background-attachment: fixed;
 }
-
+// 992px
+@media screen and (max-width:992px) {
+    .left_menu{
+        transform: translateX(-100%);
+        backdrop-filter: blur(3px);
+    }
+    .left_menu_show{
+        transform: translateX(0%);
+    }
+    #menu_icon{
+        display: flex;
+    }
+}
 @media screen and (max-width:560px) {
    .father{
        max-height: $height_tel;
@@ -150,6 +177,7 @@ body {
    }
    .left_menu{
        height: $height_tel;
+       width: 100%;
    }
        
 }
