@@ -1,162 +1,141 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-weight: 200;
 }
-$color:white;
+$color: white;
 
-html{
+html {
     scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0px;
 }
-body{
+body {
     width: 100%;
     opacity: 0;
     transition: 1s all;
 }
-.proba{
-    max-height: 95vh;
+.mather {
+    max-height: 100vh;
     width: 100%;
-    border: 2px solid red;
     overflow-y: scroll;
-    div{
+    .child {
+        position: relative;
         width: 100%;
-        min-height: 95vh;
-        border: 1px solid black;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top: 1px solid gray;
     }
 }
-.header{
+
+.left_menu {
     position: fixed;
-    width: 100%;
-    height: 100vh;
     top: 0%;
     left: 0%;
     z-index: 200;
+    width: 230px;
+    height: 100vh;
+    border-right: 0.5px solid rgba(255, 255, 255, 0.2);
     display: flex;
-    .left_menu{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    .kompaniya_logo {
+        height: auto;
+        width: 100%;
         position: relative;
-        width: 230px;
-        height: 100%;
-        border-right: 0.5px solid rgba(255, 255, 255, 0.2);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 30px;
-        .kompaniya_logo{
-            height: auto;
+        a {
             width: 100%;
+            height: 100%;
+            font-size: 35px;
+            font-weight: bold;
+            color: $color;
             position: relative;
-            a{
-                width: 100%;
-                height: 100%;
-                font-size: 35px;
-                font-weight: bold;
-                color: $color;
-                position: relative;
-                text-decoration: none;
-            }
+            text-decoration: none;
         }
-        .header_menu{
-           ul{
-               display: flex;
-               justify-content: center;
-               flex-direction: column;
-               li{
-                   a{
-                       position: relative;
-                       text-decoration: none;
-                       text-transform: uppercase;
-                       color: $color;
-                       margin: 5px;
-                       display: block;
-                       font-size: 15px;
-                       letter-spacing: 1.5px;
-                       overflow: visible;
-                       &::before{
-                           content: '';
-                           position: absolute;
-                           transform: translate(-150%,-50%);
-                           top: 50%;
-                           width: 10px;
-                           height: 1px;
-                           background: white;
-                       }
-                   }
-               }
-           }
-        }
-        .control_audio{
+    }
+    .header_menu {
+        ul {
             display: flex;
-            justify-content: space-evenly;
-            color: white;
-            align-items: center;
-            font-size: 15px;
-            position: relative;
-            div{
-                height: 100%;
-                width: 40px;
-                position: relative;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                cursor: pointer;
-                @keyframes anim_audio{
-                    100%{
-                        transform: scaleY(var(--i));
+            justify-content: center;
+            flex-direction: column;
+            li {
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $color;
+                    margin: 5px;
+                    display: block;
+                    font-size: 15px;
+                    letter-spacing: 1.5px;
+                    overflow: visible;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        transform: translate(-150%, -50%);
+                        top: 50%;
+                        width: 10px;
+                        height: 1px;
+                        background: white;
                     }
                 }
-                span{
-                    height: 9px;
-                    width: 1px;
-                    background: white;
-                    position: relative;
-                }
-                .span_toggle{
-                    animation: anim_audio calc(var(--i)*0.5s) linear alternate infinite;
-                }
             }
         }
     }
-    .site_name{
+    .control_audio {
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+        font-size: 15px;
         position: relative;
-        width: 74.5%;
-        height: 100%;
-        border-right: 0.5px solid rgba(255, 255, 255, 0.2);
+        div {
+            height: 100%;
+            width: 40px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            cursor: pointer;
+            @keyframes anim_audio {
+                100% {
+                    transform: scaleY(var(--i));
+                }
+            }
+            span {
+                height: 9px;
+                width: 1px;
+                background: white;
+                position: relative;
+            }
+            .span_toggle {
+                animation: anim_audio calc(var(--i) * 0.5s) linear alternate infinite;
+            }
+        }
     }
-    .big_menu{
-        position: relative;
-        width: 8.7%;
-        height: 100%;
-    }
+}
 
-}
-section{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-top: 1px solid gray;
-}
-#home{
+#home {
+    // background: green;
     background-image: url(https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-attachment: fixed;
     border-top: none;
 }
-#my_projects{
-    background-image: url();
+#my_projects {
+    background: white5;
     background-attachment: fixed;
 }
-#about_me{
-    background-image: url();
+#about_me {
+    background: white;
     background-attachment: fixed;
 }
-#contact_me{
-    background-image: url();
+#contact_me {
+    background: white;
     background-attachment: fixed;
 }

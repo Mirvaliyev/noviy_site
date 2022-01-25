@@ -3,7 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-weight: 200;
 }
 
@@ -22,35 +22,29 @@ body {
   transition: 1s all;
 }
 
-.proba {
-  max-height: 95vh;
+.mather {
+  max-height: 100vh;
   width: 100%;
-  border: 2px solid red;
   overflow-y: scroll;
 }
 
-.proba div {
+.mather .child {
+  position: relative;
   width: 100%;
-  min-height: 95vh;
-  border: 1px solid black;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-top: 1px solid gray;
 }
 
-.header {
+.left_menu {
   position: fixed;
-  width: 100%;
-  height: 100vh;
   top: 0%;
   left: 0%;
   z-index: 200;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header .left_menu {
-  position: relative;
   width: 230px;
-  height: 100%;
+  height: 100vh;
   border-right: 0.5px solid rgba(255, 255, 255, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,13 +59,13 @@ body {
   padding: 30px;
 }
 
-.header .left_menu .kompaniya_logo {
+.left_menu .kompaniya_logo {
   height: auto;
   width: 100%;
   position: relative;
 }
 
-.header .left_menu .kompaniya_logo a {
+.left_menu .kompaniya_logo a {
   width: 100%;
   height: 100%;
   font-size: 35px;
@@ -81,7 +75,7 @@ body {
   text-decoration: none;
 }
 
-.header .left_menu .header_menu ul {
+.left_menu .header_menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +88,7 @@ body {
           flex-direction: column;
 }
 
-.header .left_menu .header_menu ul li a {
+.left_menu .header_menu ul li a {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -106,8 +100,8 @@ body {
   overflow: visible;
 }
 
-.header .left_menu .header_menu ul li a::before {
-  content: '';
+.left_menu .header_menu ul li a::before {
+  content: "";
   position: absolute;
   -webkit-transform: translate(-150%, -50%);
           transform: translate(-150%, -50%);
@@ -117,7 +111,7 @@ body {
   background: white;
 }
 
-.header .left_menu .control_audio {
+.left_menu .control_audio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +126,7 @@ body {
   position: relative;
 }
 
-.header .left_menu .control_audio div {
+.left_menu .control_audio div {
   height: 100%;
   width: 40px;
   position: relative;
@@ -162,39 +156,16 @@ body {
   }
 }
 
-.header .left_menu .control_audio div span {
+.left_menu .control_audio div span {
   height: 9px;
   width: 1px;
   background: white;
   position: relative;
 }
 
-.header .left_menu .control_audio div .span_toggle {
-  -webkit-animation: anim_audio calc(var(--i)*0.5s) linear alternate infinite;
-          animation: anim_audio calc(var(--i)*0.5s) linear alternate infinite;
-}
-
-.header .site_name {
-  position: relative;
-  width: 74.5%;
-  height: 100%;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.2);
-}
-
-.header .big_menu {
-  position: relative;
-  width: 8.7%;
-  height: 100%;
-}
-
-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  border-top: 1px solid gray;
+.left_menu .control_audio div .span_toggle {
+  -webkit-animation: anim_audio calc(var(--i) * 0.5s) linear alternate infinite;
+          animation: anim_audio calc(var(--i) * 0.5s) linear alternate infinite;
 }
 
 #home {
@@ -204,17 +175,17 @@ section {
 }
 
 #my_projects {
-  background-image: url();
+  background: white5;
   background-attachment: fixed;
 }
 
 #about_me {
-  background-image: url();
+  background: white;
   background-attachment: fixed;
 }
 
 #contact_me {
-  background-image: url();
+  background: white;
   background-attachment: fixed;
 }
 /*# sourceMappingURL=style.css.map */
