@@ -1,13 +1,7 @@
 let s=1
-$('#menu_icon').click(function () { 
+$('.menu_icon').click(function () { 
     $('.left_menu').toggleClass('left_menu_show');
-    if(s%2==1){
-        $(this).attr('name', 'remove-outline');
-    }
-    else{
-        $(this).attr('name', 'reorder-two-outline');
-    }
-    s++
+    $('.menu_icon span').toggleClass('span_toggle');
 });
 const sa=document.querySelector('#sa');
 window.addEventListener('load', function(){
