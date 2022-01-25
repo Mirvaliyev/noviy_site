@@ -11,7 +11,7 @@
 $color: white;
 $height_des: 100vh;
 $height_tel: 93vh;
-html {
+html,.father,body{
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
@@ -52,8 +52,8 @@ body {
     }
     .span_toggle{
         height: 0px !important;
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
+        border-top: 2.25px solid white;
+        border-bottom: 2.25px solid white;
     }
 }
 .father {
